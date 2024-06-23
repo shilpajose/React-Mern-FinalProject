@@ -46,6 +46,11 @@ function JobApplications() {
             selector: row => row.userEmail,
             sortable: true,
         },
+        // {
+        //     name: 'Job Post',
+        //     selector: row => row.job_position,
+        //     sortable: true,
+        // },
         
         {
             name: 'Company Name',

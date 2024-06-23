@@ -37,6 +37,7 @@ function SingleJobView() {
                 sessionStorage.setItem("date", JSON.stringify(result.data.date))
                 sessionStorage.setItem("JobId", JSON.stringify(result.data._id))
                 sessionStorage.setItem("company", JSON.stringify(result.data.company_name))
+                sessionStorage.setItem("job", JSON.stringify(result.data.job_position))
                 setInputs({ fullname: "", email: "", jobId: "", phone: "", department: "", resume: "" })
             }
         } catch (err) {
@@ -67,11 +68,13 @@ function SingleJobView() {
     const pid = sessionStorage.getItem('JobId')
     const userEmail = sessionStorage.getItem('email')
     const company = sessionStorage.getItem('company')
+    const job = sessionStorage.getItem('job')
     const date = sessionStorage.getItem('date')
     const userId = sessionStorage.getItem('uid')
 
     console.log('Job Id :', pid);
     console.log('company :', company);
+    console.log('job :', job);
     console.log('User Email :', userEmail);
     console.log('User Name :', name);
     console.log('Date:', date);
@@ -125,6 +128,7 @@ function SingleJobView() {
         // Retrieve data from sessionStorage
         const jobId = sessionStorage.getItem('JobId');
         const company = sessionStorage.getItem('company');
+        const job = sessionStorage.getItem('job');
         const date = sessionStorage.getItem('date');
         const userEmail = sessionStorage.getItem('email')
         const userId = sessionStorage.getItem('uid')
