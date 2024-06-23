@@ -240,7 +240,7 @@ function Auth({ insideRegister }) {
                           <button onClick={handleCancel} className='btn btn-primary mb-2 Me-2'>CANCEL</button>
                         </div>
 
-                        <p>New User? Click here to <Link to={'/register'}>Register</Link></p>
+                        {/*<p>New User? Click here to <Link to={'/register'}>Register</Link></p>*/}
                         <div className='d-flex m-3 p-3'>
                           <input type="checkbox" style={{ marginRight: '5px' }} /><label style={{ marginRight: '95px' }}>Remember me</label>
                           {/* <Link to="/forgot-password">Forgot password?</Link> */}
